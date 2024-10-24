@@ -40,7 +40,7 @@ function showRandomNumbers() {
   setTimeout(() => {
     numbersContainer.style.display = "none";
     inputContainer.style.display = "block"; // Mostra il contenitore input
-  }, 0); // 30 secondi
+  }, 30000); // 30 secondi
 }
 
 showRandomNumbers();
@@ -65,6 +65,5 @@ function checkNumbers() {
     } numeri corretti: ${correctNumbers.join(", ")}`
   );
 }
-
 
 submitBtn.addEventListener("click", checkNumbers);
